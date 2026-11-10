@@ -10,9 +10,6 @@ public static class MauiProgram
         builder
             .UseMauiApp<App>();
 
-#if DEBUG
-builder.Logging.AddDebug();
-#endif
 
         return builder.Build();
     }
