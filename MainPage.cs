@@ -1,4 +1,5 @@
 namespace FloatingPanelCSharp;
+using Microsoft.Maui.Controls.Shapes;
 
 public class MainPage : ContentPage
 {
@@ -91,8 +92,10 @@ public class MainPage : ContentPage
             BackgroundColor = Color.FromArgb("#211A30"),
             Stroke = Color.FromArgb("#8B5CF6"),
             StrokeThickness = 1,
-            Padding = 18,
-            StrokeShape = new Microsoft.Maui.Controls.RoundRectangle { CornerRadius = 18 },
+            StrokeShape = new Microsoft.Maui.Controls.Shapes.RoundRectangle
+{
+    CornerRadius = 12
+},
             Content = new VerticalStackLayout
             {
                 Spacing = 12,
